@@ -15,7 +15,7 @@
 
 WeTS is a benchmark dataset for TS, where all the examples are annotated by expert translators. As far as we know, this is the first golden corpus for TS. The statistics about WeTS are listed in the following table:
 
-|Translation Direction| Train| Valid| Test|
+|**Translation Direction**|**Train**| **Valid**| **Test**|
 |---------------------|------|------|-----|
 |English2German       |14,957|1000  |1000 |
 |German2English       |11,777|1000  |1000 |
