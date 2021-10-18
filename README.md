@@ -15,6 +15,13 @@
 
 WeTS is a benchmark dataset for TS, where all the examples are annotated by expert translators. As far as we know, this is the first golden corpus for TS. The statistics about WeTS are listed in the following table:
 
+|Translation Direction| Train| Valid| Test|
+|---------------------|------|------|-----|
+|English2German       |14,957|1000  |1000 |
+|German2English       |11,777|1000  |1000 |
+|English2Chinese      |15,769|1000  |1000 |
+|Chinese2English      |21,213|1000  |1000 | 
+
 ### Models
 ---------
 We release the pre-trained NMT models which are used to generate the MT sentences.
