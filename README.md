@@ -22,6 +22,13 @@ WeTS is a benchmark dataset for TS, where all the examples are annotated by expe
 |English2Chinese      |15,769|1000  |1000 |
 |Chinese2English      |21,213|1000  |1000 | 
 
+For corpus in each direction, the data is organized as:
+*direction*.*split*.src: the source-side sentences
+*direction*.*split*.mask: the masked translation sentences, the placeholder is "<MASK>"
+*direction*.*split*.tgt: the predicted suggestions, the test set for English2Chinese has three references for each example
+
+*direction*: En2De, De2En, Zh2En, En2Zh
+*split*: train, dev, test
 ### Models
 ---------
 We release the pre-trained NMT models which are used to generate the MT sentences.
