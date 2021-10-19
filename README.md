@@ -8,7 +8,7 @@
 * [Models](#models)
 * [Get Started](#started)
 * [Citation](#citation)
-* [Licences](#licence)
+* [Licence](#licence)
 
 ### Data
 ----------
@@ -24,7 +24,7 @@ WeTS is a benchmark dataset for TS, where all the examples are annotated by expe
 
 For corpus in each direction, the data is organized as:  
 *direction*.*split*.src: the source-side sentences  
-*direction*.*split*.mask: the masked translation sentences, the placeholder is "<MASK>"  
+*direction*.*split*.mask: the masked translation sentences, the placeholder is "\<MASK\>"  
 *direction*.*split*.tgt: the predicted suggestions, the test set for English2Chinese has three references for each example 
 
 *direction*: En2De, De2En, Zh2En, En2Zh  
@@ -45,5 +45,25 @@ Codes for the first-phase pre-training are not included in this repo, as we dire
 
 The second-phase pre-training:  
 ```Bash
+sh preptraining.sh
+```
 
 #### fine-tuning
+```Bash
+sh finetuning.sh
+```
+
+Codes in this repo is mainly forked from fairseq (https://github.com/pytorch/fairseq.git)
+### Citation
+Please cite the following paper if you found the resources in this repository useful.
+```bibtex
+@article{yang2021wets,
+  title={WeTS: A Benchmark for Translation Suggestion},
+  author={Yang, Zhen and Zhang, Yingxue and Li, Ernan and Meng, Fandong and Zhou, Jie},
+  journal={arXiv preprint arXiv:2110.05151},
+  year={2021}
+}
+```
+
+### Licence
+See LICENCE
