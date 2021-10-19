@@ -35,6 +35,7 @@ For corpus in each direction, the data is organized as:
 We release the pre-trained NMT models which are used to generate the MT sentences. Additionally, the released NMT models can be used to generate synthetic corpus for TS, which can improve the final performance dramatically.Detailed description about the way of generating synthetic corpus can be found in our paper.  
 
 ### Get Started
+----------
 #### data preprocessing
 ```Bash
 sh process.sh 
@@ -54,7 +55,9 @@ sh finetuning.sh
 ```
 
 Codes in this repo is mainly forked from fairseq (https://github.com/pytorch/fairseq.git)
+
 ### Citation
+--------------
 Please cite the following paper if you found the resources in this repository useful.
 ```bibtex
 @article{yang2021wets,
@@ -65,5 +68,6 @@ Please cite the following paper if you found the resources in this repository us
 }
 ```
 
-### Licence
+### LICENCE
+--------------
 See LICENCE
