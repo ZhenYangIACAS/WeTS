@@ -36,7 +36,7 @@ We release the pre-trained NMT models which are used to generate the MT sentence
 
 The released models can be downloaded at:
 
-`[Download the models](https://pan.baidu.com/s/1ZWf4HIqj414IpZkSRiw5mw  "download")`
+[Download the models](https://pan.baidu.com/s/1ZWf4HIqj414IpZkSRiw5mw  "download")
 
 and the password is "2iyk"
 
