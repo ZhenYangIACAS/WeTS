@@ -35,7 +35,8 @@ For corpus in each direction, the data is organized as:
 We release the pre-trained NMT models which are used to generate the MT sentences. Additionally, the released NMT models can be used to generate synthetic corpus for TS, which can improve the final performance dramatically.Detailed description about the way of generating synthetic corpus can be found in our paper.  
 
 The released models can be downloaded at:
-`Download the models(https://pan.baidu.com/s/1ZWf4HIqj414IpZkSRiw5mw)`
+
+`[Download the models](https://pan.baidu.com/s/1ZWf4HIqj414IpZkSRiw5mw)`
 
 and the password is "2iyk"
 
