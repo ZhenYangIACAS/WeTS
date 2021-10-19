@@ -22,13 +22,28 @@ WeTS is a benchmark dataset for TS, where all the examples are annotated by expe
 |English2Chinese      |15,769|1000  |1000 |
 |Chinese2English      |21,213|1000  |1000 | 
 
-For corpus in each direction, the data is organized as:
-*direction*.*split*.src: the source-side sentences
-*direction*.*split*.mask: the masked translation sentences, the placeholder is "<MASK>"
-*direction*.*split*.tgt: the predicted suggestions, the test set for English2Chinese has three references for each example
+For corpus in each direction, the data is organized as:  
+*direction*.*split*.src: the source-side sentences  
+*direction*.*split*.mask: the masked translation sentences, the placeholder is "<MASK>"  
+*direction*.*split*.tgt: the predicted suggestions, the test set for English2Chinese has three references for each example 
 
-*direction*: En2De, De2En, Zh2En, En2Zh
-*split*: train, dev, test
+*direction*: En2De, De2En, Zh2En, En2Zh  
+*split*: train, dev, test  
+
 ### Models
 ---------
-We release the pre-trained NMT models which are used to generate the MT sentences.
+We release the pre-trained NMT models which are used to generate the MT sentences. Additionally, the released NMT models can be used to generate synthetic corpus for TS, which can improve the final performance dramatically.Detailed description about the way of generating synthetic corpus can be found in our paper.  
+
+### Get Started
+#### data preprocessing
+```Bash
+sh process.sh 
+```
+
+#### pre-training
+Codes for the first-phase pre-training are not included in this repo, as we directly utilized the codes of XLM (https://github.com/facebookresearch/XLM) with little modiafication. And we did not achieve much gains with the first-phase pretraining.
+
+The second-phase pre-training:  
+```Bash
+
+#### fine-tuning
