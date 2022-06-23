@@ -60,8 +60,8 @@ Codes for the first-phase pre-training are not included in this repo, as we dire
 
 The second-phase pre-training:  
 ```Bash
-sh preptraining.sh
-```
+sh pretraining.sh
+``
 
 #### fine-tuning
 ```Bash
